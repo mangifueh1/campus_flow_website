@@ -52,6 +52,10 @@
                 grid-template-columns: 1fr;
                 gap: 40px;
             }
+
+            .about-header {
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -73,8 +77,8 @@
         </div>
     </nav>
 
-    <header
-        style="padding-top: 160px; padding-bottom: 60px; background: linear-gradient(135deg, #f8fcfb 0%, #eefbf5 100%);">
+    <header class="about-header"
+        style="padding: 160px 20px 60px; background: linear-gradient(135deg, #f8fcfb 0%, #eefbf5 100%);">
         <div class="container">
             <h1 style="font-size: 3.5rem;">Behind Campus Flow</h1>
         </div>
@@ -87,9 +91,27 @@
                     <div class="profile-img"><img src="assets/img/me.png" alt="Founder Picture"></div>
                     <h2>Mangi Fueh</h2>
                     <p style="color: var(--primary-dark); font-weight: 600;">Creator & Lead Developer</p>
-                    <div style="margin-top: 24px;">
-                        <a href="mailto:fuehmangi410@gmail.com" class="btn btn-outline" style="width: 100%;">Get in
-                            Touch</a>
+                    <div class="profile-contacts" style="margin-top: 24px; text-align: left;">
+                        <div style="margin-bottom: 15px;">
+                            <a href="mailto:fuehmangi410@gmail.com"
+                                style="display: flex; align-items: center; gap: 10px; color: var(--black); font-weight: 500;">
+                                <span style="font-size: 1.2rem;">📧</span> fuehmangi410@gmail.com
+                            </a>
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <a href="https://www.linkedin.com/in/mangi-fueh-115954221" target="_blank"
+                                style="display: flex; align-items: center; gap: 10px; color: var(--black); font-weight: 500;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                                    alt="LinkedIn" style="height: 20px;"> LinkedIn Profile
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://wa.me/237673926438" target="_blank"
+                                style="display: flex; align-items: center; gap: 10px; color: var(--black); font-weight: 500;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                                    alt="WhatsApp" style="height: 20px;"> +237 673 926 438
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="about-content">
