@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | Campus Flow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .feature-card {
+            background: var(--light-grey);
+            border-radius: 32px;
+            padding: 60px;
+            margin-bottom: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .feature-card:nth-child(even) {
+            background: var(--white);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-card:nth-child(even) .feature-text {
+            order: 2;
+        }
+
+        .feature-card h2 {
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+        }
+
+        .feature-image {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            height: 400px;
+        }
+
+        .coming-soon-badge {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 4px 12px;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 968px) {
+            .feature-card {
+                grid-template-columns: 1fr;
+                padding: 40px;
+                text-align: center;
+            }
+
+            .feature-card:nth-child(even) .feature-text {
+                order: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo.png" alt="Campus Flow Logo">
+                <span>Campus Flow</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="features.html" class="active">Features</a>
+                <a href="about.html">About</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+            <a href="#" class="btn btn-primary">Download App</a>
+        </div>
+    </nav>
+
+    <header
+        style="padding: 160px 20px 60px; text-align: center; background: linear-gradient(135deg, #f8fcfb 0%, #eefbf5 100%);">
+        <div class="container">
+            <h1 style="font-size: 3.5rem; margin-bottom: 20px;">Built for Efficiency</h1>
+            <p style="color: var(--grey); font-size: 1.2rem; max-width: 700px; margin: 0 auto;">Explore the features
+                that make Campus Flow the best companion for your academic journey.</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <!-- Timetable -->
+            <div class="feature-card">
+                <div class="feature-text">
+                    <h2>Smart Timetable</h2>
+                    <p>Never miss a lecture again. Our smart timetable intelligently organizes your classes, labs, and
+                        tutorials. With easy sync and interactive views, your schedule is always at your fingertips.</p>
+                    <ul style="margin-top: 24px;">
+                        <li style="display: flex; gap: 10px; margin-bottom: 12px;">✅ Class Reminders</li>
+                        <li style="display: flex; gap: 10px; margin-bottom: 12px;">✅ Weekly Overviews</li>
+                        <li style="display: flex; gap: 10px; margin-bottom: 12px;">✅ Effortless Course Sync</li>
+                    </ul>
+                </div>
+                <div class="feature-image">
+                    <img src="assets/img/timetable_mockup.png" alt="Timetable Mockup">
+                </div>
+            </div>
+
+            <!-- Campus Map -->
+            <div class="feature-card">
+                <div class="feature-text">
+                    <h2>Interactive Campus Map</h2>
+                    <p>New to campus? No problem. Our interactive map helps you find any room, department, or facility
+                        in seconds. Integrated navigation ensures you always know the fastest route to your next class.
+                    </p>
+                    <ul style="margin-top: 24px;">
+                        <li style="display: flex; gap: 10px; margin-bottom: 12px;">✅ Room-level Search</li>
+                        <li style="display: flex; gap: 10px; margin-bottom: 12px;">✅ Facility Directory</li>
+                        <li style="display: flex; gap: 10px; margin-bottom: 12px;">✅ Offline Support</li>
+                    </ul>
+                </div>
+                <div class="feature-image">
+                    <img src="assets/img/map_mockup.png" alt="Campus Map Mockup">
+                </div>
+            </div>
+
+            <!-- Announcements -->
+            <div class="feature-card">
+                <div class="feature-text">
+                    <span class="coming-soon-badge">Future Prospect</span>
+                    <h2>Campus Announcements</h2>
+                    <p>Stay in the loop with real-time updates from your university. From event changes to
+                        administrative news, everything that matters is delivered straight to your notification tray.
+                    </p>
+                </div>
+                <div class="feature-image"
+                    style="background: #f0f0f0; height: 300px; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 4rem;">
+                    📢</div>
+            </div>
+
+            <!-- Course Updates -->
+            <div class="feature-card">
+                <div class="feature-text">
+                    <span class="coming-soon-badge">Coming Soon</span>
+                    <h2>Direct Teacher Updates</h2>
+                    <p>Teachers can directly communicate with their specific course students. Instant alerts for
+                        assignment deadlines, lecture rescheduling, or additional study materials.</p>
+                </div>
+                <div class="feature-image"
+                    style="background: #f0f0f0; height: 300px; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 4rem;">
+                    👨‍🏫</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="logo" style="color: white;">
+                    <img src="assets/img/logo.png" alt="Campus Flow Logo">
+                    <span>Campus Flow</span>
+                </a>
+                <p>The companion every student needs. Flow through your academic journey with ease.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="mailto:fuehmangi410@gmail.com">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links" style="opacity: 0.5;">
+                <h4>Download</h4>
+                <p>Available soon on iOS App Store.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Campus Flow. Designed for students, by students.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

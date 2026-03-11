@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Campus Flow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-grid {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .profile-card {
+            background: var(--light-grey);
+            padding: 40px;
+            border-radius: 32px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background: var(--primary);
+            margin: 0 auto 30px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: white;
+        }
+
+        .mission-box {
+            padding: 40px;
+            border-left: 4px solid var(--primary);
+            background: var(--primary-light);
+            border-radius: 0 24px 24px 0;
+            margin: 40px 0;
+        }
+
+        @media (max-width: 968px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo.png" alt="Campus Flow Logo">
+                <span>Campus Flow</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+                <a href="about.html" class="active">About</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+            <a href="#" class="btn btn-primary">Download App</a>
+        </div>
+    </nav>
+
+    <header
+        style="padding-top: 160px; padding-bottom: 60px; background: linear-gradient(135deg, #f8fcfb 0%, #eefbf5 100%);">
+        <div class="container">
+            <h1 style="font-size: 3.5rem;">Behind Campus Flow</h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="about-grid">
+                <div class="profile-card">
+                    <div class="profile-img"><img src="assets/img/me.png" alt="Founder Picture"></div>
+                    <h2>Mangi Fueh</h2>
+                    <p style="color: var(--primary-dark); font-weight: 600;">Creator & Lead Developer</p>
+                    <div style="margin-top: 24px;">
+                        <a href="mailto:fuehmangi410@gmail.com" class="btn btn-outline" style="width: 100%;">Get in
+                            Touch</a>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2>The Journey</h2>
+                    <p>Campus Flow started with a simple observation: student life is unnecessarily complicated. Between
+                        juggling timetables, finding lecture halls in complex campus layouts, and keeping up with
+                        scattered announcements, students spend more time managing their lives than actually living
+                        them.</p>
+
+                    <div class="mission-box">
+                        <h3 style="margin-top: 0; color: var(--primary-dark);">Our Mission</h3>
+                        <p style="margin-bottom: 0;">To empower every student with the tools they need to navigate their
+                            academic journey with absolute clarity and ease. We believe technology should serve
+                            students, not overwhelm them.</p>
+                    </div>
+
+                    <h2>Why Campus Flow?</h2>
+                    <p>Unlike generic productivity apps, Campus Flow is built specifically for the university
+                        environment. It's designed to be fast, beautiful, and deeply integrated into the specific needs
+                        of a modern student. From offline map support to course-specific sync, every feature is built to
+                        solve a real problem.</p>
+
+                    <p>I'm constantly working to improve the app and add features that the student community needs.
+                        Whether it's the upcoming course announcement system or better navigation tools, the goal
+                        remains the same: simplifying your academic life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="logo" style="color: white;">
+                    <img src="assets/img/logo.png" alt="Campus Flow Logo">
+                    <span>Campus Flow</span>
+                </a>
+                <p>The companion every student needs. Flow through your academic journey with ease.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="mailto:fuehmangi410@gmail.com">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Developer</h4>
+                <p style="color: rgba(255,255,255,0.4); font-size: 0.9rem;">Built by Mangi Marvelous Fueh with ❤️ for
+                    students
+                    everywhere.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Campus Flow. Designed for students, by students.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

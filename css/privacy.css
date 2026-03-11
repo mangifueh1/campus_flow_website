@@ -1,0 +1,215 @@
+:root {
+    --primary: #3BB77E;
+    --primary-light: #EBF8F2;
+    --primary-dark: #2d8a5f;
+    --black: #010f1c;
+    --grey: #646464;
+    --light-grey: #f5f7f9;
+    --white: #ffffff;
+    --shadow: rgba(59, 183, 126, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--light-grey);
+    color: var(--black);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.header {
+    background: linear-gradient(135deg, var(--black) 0%, #1a2a3a 100%);
+    color: var(--white);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: -10%;
+    width: 120%;
+    height: 100px;
+    background: var(--light-grey);
+    transform: rotate(-2deg);
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, var(--primary), #a2ffd3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 900px;
+    margin: -40px auto 60px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.content-card {
+    background: var(--white);
+    padding: 50px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px var(--shadow);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.last-updated {
+    display: inline-block;
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 45px 0 20px;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+}
+
+h2::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 24px;
+    background: var(--primary);
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 25px 0 15px;
+    color: var(--grey);
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    color: #4a5568;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    color: #4a5568;
+}
+
+li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.feature-item {
+    background: var(--light-grey);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #eef0f2;
+    transition: var(--transition);
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    background: var(--white);
+    box-shadow: 0 10px 20px var(--shadow);
+    border-color: var(--primary-light);
+}
+
+.feature-item strong {
+    display: block;
+    color: var(--primary-dark);
+    margin-bottom: 8px;
+}
+
+.footer {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--black);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+.footer strong {
+    color: var(--white);
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-box {
+    background: linear-gradient(to right, var(--primary), var(--primary-dark));
+    padding: 30px;
+    border-radius: 20px;
+    color: var(--white);
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-box h3 {
+    color: var(--white);
+    margin-top: 0;
+}
+
+.contact-box a {
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .content-card {
+        padding: 30px 20px;
+    }
+}
